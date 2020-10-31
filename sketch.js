@@ -22,18 +22,19 @@ function setup() {
 		packageSprite=createSprite(width/2, 80,10,10);
 		packageSprite.addImage(packageIMG);
 		packageSprite.scale=0.2
+	
 
 	    line1=Bodies.rectangle(320,610,20,100);
 		World.add(world,line1);
-		line1.shapeColor="red"
+		
 
 		line2=Bodies.rectangle(425,659,200,20)
 		World.add(world,line2);	
-		line2.shapeColor="red"
+		
 	
 		line3=Bodies.rectangle(520,610,20,100)
 		World.add(world,line2);	
-		line3.shapeColor="red"
+		
 
 		helicopterSprite=createSprite(width/2, 200, 10,10);
 		helicopterSprite.addImage(helicopterIMG)
