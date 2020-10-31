@@ -7,6 +7,9 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
+var engine,world
+
+
 function preload()
 {
 	helicopterIMG=loadImage("helicopter.png")
@@ -16,6 +19,9 @@ function preload()
 function setup() {
 		createCanvas(800, 700);
 		rectMode(CENTER);
+	
+	engine = Engine.create();
+	world = engine.world;
 
 	
 
