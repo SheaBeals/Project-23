@@ -19,9 +19,8 @@ function setup() {
 
 	
 
-		packageSprite=Bodies.rectangle(width/2, 80, 10,10);
-		World.add(world,packageSprite);
-		packageSprite.addImage(packageIMG)
+		packageSprite=createSprite(width/2, 80,10,10);
+		packageSprite.addImage(packageIMG);
 		packageSprite.scale=0.2
 
 	    line1=Bodies.rectangle(320,610,20,100);
@@ -65,7 +64,7 @@ function setup() {
 function draw() {
 	  rectMode(CENTER);
 	  background(0);
-	  packageSprite.x= packageBody.position.x 
+	  packageSprite.x= packageBody.position.x
 	  packageSprite.y= packageBody.position.y
 	
 	fill('red');
